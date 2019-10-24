@@ -1,0 +1,32 @@
+/*font size, color white, center, 0 margin, background black*/
+.joke-text
+{
+    background-color: red;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    color:#FFF;
+}
+
+.ui-tooltip
+{
+    background: #F7819F;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    color:#4C0B5F;
+}
+
+.carousel-item
+{
+  background-color: red;
+  height: 450x;
+  width: 500px;
+  border: 10px dashed black;
+  margin: 5px auto;
+}
+
+body
+{
+    background-color: black;
+}

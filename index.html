@@ -7,10 +7,11 @@
   <!-- CSS imports -->
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/ui-lightness/jquery-ui.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
-  <h1 class="joke-text">Hover over the photo to see the punchline</h1>
+  <h1 class="joke-text">Hover over the photo!!!!</h1>
 <div id="joke-carousel" class="carousel slide" data-ride="carousel">
    <!-- indicators -->
   <ol class="carousel-indicators">
@@ -21,14 +22,14 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="flex-container">
-      <img class="d-block w-100" src="images/Creepa.jpg" alt="Hes gonna go boom">
+      <img class="d-block w-100" src="images/Creepa.jpg" alt="Hes gonna go boom" title="boom">
     </div>
       </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="images/costumes.jpg" alt="And they said infinity war was an ambitious crossover">
+      <img class="d-block w-100" src="images/costumes.jpg" alt="And they said infinity war was an ambitious crossover" title="Now this is epic">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="images/skeleton trumpet.gif" alt="doot">
+      <img class="d-block w-100" src="images/skeleton trumpet.gif" alt="doot" title="dooooooooooooooot">
     </div>
   </div>
   <a class="carousel-control-prev" href="#joke-carousel" role="button" data-slide="prev">
@@ -49,6 +50,14 @@
     $.widget.bridge('uitooltip', $.ui.tooltip);
     $.widget.bridge('uibutton', $.ui.button);
   </script>
+  <script>
+     $(function() {
+    $("img").uitooltip({
+    track: true
+    });
+    });
+</script>
+
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.js"></script>
 </body>
 
